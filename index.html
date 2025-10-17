@@ -30,7 +30,7 @@
     <li>No account, login, or personal identity collected.</li>
     <li>No app usage analytics, crash analytics, or custom tracking SDKs.</li>
     <li>Network data usage metrics processed locally only.</li>
-    <li>Ads provided via Google AdMob (may use Advertising ID).</li>
+    <li>Completely ad-free – no advertising or Advertising ID used.</li>
     <li>You can reset data in-app or uninstall to remove all local data.</li>
   </ul>
 
@@ -69,61 +69,51 @@
     <li>All locally stored data is deleted if you use the in-app reset data option or uninstall the app.</li>
   </ul>
 
-  <h2>7. Advertising (Google AdMob)</h2>
-  <p>The app integrates Google Mobile Ads (AdMob) to display banner, interstitial, and native ads. AdMob may collect:</p>
-  <ul>
-    <li>Advertising ID (resettable), IP address, device information, coarse location (inferred), and performance metrics for ad delivery and fraud prevention.</li>
-  </ul>
-  <p>Refer to Google's policies for full details: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. You may opt out or limit personalized ads via Android settings or <a href="https://adssettings.google.com" target="_blank" rel="noopener">https://adssettings.google.com</a>.</p>
-  <p><strong>EEA / UK Users:</strong> Where required, a consent or limited ad serving dialog may be presented (e.g., via Google's User Messaging Platform) before personalized ads are shown.</p>
-
-  <h2>8. Foreground Service & Notification</h2>
+  <h2>7. Foreground Service & Notification</h2>
   <p>The app runs a foreground service to monitor network speed continuously and keep the notification active. This service does not transmit data externally; it only reads system network statistics (TrafficStats API) locally.</p>
 
-  <h2>9. Permissions Used</h2>
+  <h2>8. Permissions Used</h2>
   <ul>
-    <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>: Required to monitor network connection status and load AdMob ads.</li>
+    <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>: Required to monitor network connection status.</li>
     <li><code>POST_NOTIFICATIONS</code>: To show optional network speed notifications (Android 13+ runtime permission).</li>
     <li><code>RECEIVE_BOOT_COMPLETED</code>: To restart monitoring and restore notification after device reboot.</li>
     <li><code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_DATA_SYNC</code>: To keep the monitoring service active with a persistent notification.</li>
-    <li><code>com.google.android.gms.permission.AD_ID</code>: Enables access to Advertising ID for AdMob.</li>
   </ul>
 
-  <h2>10. Security</h2>
+  <h2>9. Security</h2>
   <ul>
     <li>All data remains within Android's standard app sandbox.</li>
-    <li>No custom remote storage or transmission to third-party servers beyond Google ad requests.</li>
+    <li>No custom remote storage or transmission to any third-party servers.</li>
     <li>We do not implement additional encryption layers for local network data because it is non-personal and confined on-device.</li>
   </ul>
 
-  <h2>11. User Controls</h2>
+  <h2>10. User Controls</h2>
   <ul>
     <li>Disable or change notification permissions in Android system settings.</li>
     <li>Use the in-app "Reset Data" option to clear all usage history and statistics.</li>
     <li>Use the in-app "Reset Settings" option to restore default preferences.</li>
-    <li>Reset the Advertising ID or limit ad personalization in system settings.</li>
     <li>Uninstall the app to remove all remaining local data.</li>
   </ul>
 
-  <h2>12. Children's Privacy</h2>
+  <h2>11. Children's Privacy</h2>
   <p>The app is not directed to children under 13. We do not knowingly collect personal data from children. If you believe a child has provided personal information, contact us to request deletion (though the app does not require such data).</p>
 
-  <h2>13. International & Legal Disclosures</h2>
+  <h2>12. International & Legal Disclosures</h2>
   <ul>
     <li>No "sale" or "sharing" of personal information as defined in US state privacy laws.</li>
     <li>No cross-border transfers, since no personal data is stored remotely.</li>
   </ul>
 
-  <h2>14. Third Parties</h2>
+  <h2>13. Third Parties</h2>
   <ul>
-    <li><strong>Google AdMob</strong> – Advertising delivery and measurement (see Google's privacy documentation).</li>
-    <li>No other SDKs (analytics, crash reporting, social, or tracking) are integrated.</li>
+    <li>No third-party SDKs (advertising, analytics, crash reporting, social, or tracking) are integrated.</li>
+    <li>The app operates completely independently with no external dependencies.</li>
   </ul>
 
-  <h2>15. Changes to This Policy</h2>
+  <h2>14. Changes to This Policy</h2>
   <p>We may update this policy to reflect feature changes or legal requirements. The "Last Updated" date will change upon revision. Material changes affecting user rights will be highlighted in release notes where practical.</p>
 
-  <h2>16. Contact</h2>
+  <h2>15. Contact</h2>
   <p>Questions or requests: <strong>tofa.du@gmail.com</strong></p>
 
   <p>This Privacy Policy is hosted on GitHub Pages. For their data collection details, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a> and <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection" target="_blank" rel="noopener">GitHub Pages Data Collection</a>.</p>
