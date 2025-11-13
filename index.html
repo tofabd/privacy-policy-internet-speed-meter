@@ -20,7 +20,7 @@
 </head>
 <body>
   <h1>Privacy Policy – Internet Speed Meter</h1>
-  <p class="meta">Effective Date: October 18, 2025 &nbsp;|&nbsp; Last Updated: October 18, 2025</p>
+  <p class="meta">Effective Date: October 18, 2025 &nbsp;|&nbsp; Last Updated: November 14, 2025</p>
 
   <h2>1. Introduction</h2>
   <p>Internet Speed Meter ("we", "our", or "the app") respects your privacy. This policy explains what information the Android app accesses, how it is used, and the limited circumstances under which information may be shared. We designed the app to function entirely on your device without transmitting your network usage statistics or history to our own servers.</p>
@@ -37,7 +37,7 @@
   <h2>3. Information the App Processes (Device-Local)</h2>
   <p><strong>Collected/Read Locally for Display & Functionality Only:</strong></p>
   <ul>
-    <li>Network data usage (mobile and WiFi) via Android TrafficStats API – total bytes sent/received.</li>
+    <li>Network data usage (mobile and WiFi) via Android TrafficStats API and NetworkStatsManager API – total bytes sent/received. NetworkStatsManager requires Usage Access permission to provide accurate system-level network statistics.</li>
     <li>Real-time download and upload speeds calculated from network usage deltas.</li>
     <li>Network connection state (WiFi connected, mobile data enabled, no connection).</li>
     <li>Daily, monthly, and custom date range data usage statistics stored locally.</li>
@@ -77,6 +77,7 @@
     <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>: Required to monitor network connection status.</li>
     <li><code>POST_NOTIFICATIONS</code>: To show optional network speed notifications (Android 13+ runtime permission).</li>
     <li><code>RECEIVE_BOOT_COMPLETED</code>: To restart monitoring and restore notification after device reboot.</li>
+    <li><code>PACKAGE_USAGE_STATS</code> (Usage Access): Special permission to read system-level network statistics via NetworkStatsManager API. Used to accurately track WiFi and mobile data usage. Requires manual user approval in Android Settings. All data is processed locally and never transmitted externally.</li>
     <li><code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_DATA_SYNC</code>: To keep the monitoring service active with a persistent notification.</li>
   </ul>
 
