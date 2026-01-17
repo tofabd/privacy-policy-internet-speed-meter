@@ -20,17 +20,19 @@
 </head>
 <body>
   <h1>Privacy Policy – Internet Speed Meter</h1>
-  <p class="meta">Effective Date: October 18, 2025 &nbsp;|&nbsp; Last Updated: November 14, 2025</p>
+  <p class="meta">Effective Date: January 18, 2026 &nbsp;|&nbsp; Last Updated: January 18, 2026</p>
 
   <h2>1. Introduction</h2>
-  <p>Internet Speed Meter ("we", "our", or "the app") respects your privacy. This policy explains what information the Android app accesses, how it is used, and the limited circumstances under which information may be shared. We designed the app to function entirely on your device without transmitting your network usage statistics or history to our own servers.</p>
+  <p>Internet Speed Meter ("we", "our", or "the app") respects your privacy. This policy explains what information the Android app accesses, how it is used, and the limited circumstances under which information may be shared. We designed the app to function primarily on your device without transmitting your network usage statistics or history to our own servers.</p>
 
   <h2>2. Summary at a Glance</h2>
   <ul>
     <li>No account, login, or personal identity collected.</li>
-    <li>No app usage analytics, crash analytics, or custom tracking SDKs.</li>
+    <li>Firebase Analytics collects anonymized app usage data to improve stability.</li>
     <li>Network data usage metrics processed locally only.</li>
-    <li>Completely ad-free – no advertising or Advertising ID used.</li>
+    <li>Ads provided via Google AdMob (may use Advertising ID) – can be removed via in-app purchase.</li>
+    <li>Optional one-time "Remove Ads" purchase available to stop all advertisements.</li>
+    <li>GDPR consent for EEA/UK users via Google's User Messaging Platform.</li>
     <li>You can reset data in-app or uninstall to remove all local data.</li>
   </ul>
 
@@ -69,55 +71,199 @@
     <li>All locally stored data is deleted if you use the in-app reset data option or uninstall the app.</li>
   </ul>
 
-  <h2>7. Foreground Service & Notification</h2>
+  <h2>7. Firebase Analytics (Google)</h2>
+  <p>The app integrates Firebase Analytics to improve app stability and user experience. This service collects:</p>
+  <ul>
+    <li>Anonymous app usage data (screen views, feature usage, session duration, ad interaction events).</li>
+    <li>Device information (model, OS version, app version, language settings).</li>
+    <li>General geographic region (inferred from IP address, not precise GPS location).</li>
+  </ul>
+  <p>This data is used solely to:</p>
+  <ul>
+    <li>Identify and fix bugs and performance issues.</li>
+    <li>Understand how users interact with the app to improve features.</li>
+    <li>Monitor app stability and user experience metrics.</li>
+    <li>Optimize ad placement and frequency.</li>
+  </ul>
+  <p><strong>No personally identifiable information</strong> (name, email, phone number, or contacts) is collected by Firebase. All data is anonymized and aggregated. Refer to Google's policies for full details: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy &amp; Security</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+  <h2>8. Advertising (Google AdMob)</h2>
+  <p>The app integrates Google Mobile Ads (AdMob) to display banner, interstitial, and app open ads. AdMob may collect:</p>
+  <ul>
+    <li>Advertising ID (resettable), IP address, device information, coarse location (inferred), and performance metrics for ad delivery and fraud prevention.</li>
+  </ul>
+  <p>Refer to Google's policies for full details: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>. You may opt out or limit personalized ads via Android settings or <a href="https://adssettings.google.com" target="_blank" rel="noopener">https://adssettings.google.com</a>.</p>
+  
+  <p><strong>EEA / UK / Switzerland Users:</strong> The app uses Google's User Messaging Platform (UMP) SDK to collect consent for personalized advertising in compliance with GDPR and IAB's Transparency and Consent Framework (TCF v2.2). Upon first launch or when consent expires, you will be presented with a consent dialog where you can:</p>
+  <ul>
+    <li>Accept personalized ads from Google and its ad partners</li>
+    <li>Decline and receive non-personalized or limited ads instead</li>
+    <li>Manage individual vendor purposes and preferences</li>
+  </ul>
+  <p>Your consent choices are stored locally on your device and can be changed at any time by clearing app data. For more information, see <a href="https://support.google.com/admob/answer/10107561" target="_blank" rel="noopener">Google's Consent Management Platform</a>.</p>
+
+  <p><strong>Removing Ads:</strong> You can permanently remove all advertisements by purchasing the "Remove Ads" in-app product (see Section 9 below). Once purchased, no ad-related data will be collected or processed.</p>
+
+  <h2>9. In-App Purchases (Google Play Billing)</h2>
+  <p>The app offers an optional one-time in-app purchase to permanently remove all advertisements:</p>
+
+  <h3>Product Details</h3>
+  <ul>
+    <li><strong>Product Name:</strong> "Remove Ads"</li>
+    <li><strong>Type:</strong> One-time purchase (not a subscription)</li>
+    <li><strong>Effect:</strong> Removes all banner, interstitial, and app open advertisements permanently</li>
+    <li><strong>Product ID:</strong> <code>internetspeedmeter_remove_ads</code></li>
+  </ul>
+
+  <h3>Payment & Data Collection</h3>
+  <ul>
+    <li><strong>Payment Processing:</strong> All payments are processed securely through Google Play Billing. We never see or handle your credit card information, billing address, or payment details.</li>
+    <li><strong>Data Collected by Google:</strong> Google may collect purchase history, transaction IDs, product ownership status, and billing information necessary to process payments.</li>
+    <li><strong>Purchase Verification:</strong> Your purchase is verified through Google Play servers to confirm ownership.</li>
+    <li><strong>Data Stored Locally:</strong> Your purchase status (ad-free or not) is stored in app preferences on your device.</li>
+    <li><strong>No Personal Data Stored by Us:</strong> We do not store any payment or personal information on our own servers. All purchase data is managed by Google Play.</li>
+  </ul>
+
+  <h3>Purchase Restoration</h3>
+  <p>Your purchase is permanently tied to your Google Play account. It will automatically restore when you:</p>
+  <ul>
+    <li>Reinstall the app on the same device</li>
+    <li>Install the app on a new device using the same Google account</li>
+    <li>Clear app data or reset your device</li>
+  </ul>
+  <p>No action is required from you – the app automatically checks your purchase status on startup.</p>
+
+  <h3>Refund Policy</h3>
+  <p>All in-app purchase refunds are subject to <a href="https://support.google.com/googleplay/answer/2479637" target="_blank" rel="noopener">Google Play's refund policy</a>. You may request a refund through:</p>
+  <ul>
+    <li><strong>Google Play Store:</strong> Go to your Order History and request a refund (available within 48 hours of purchase)</li>
+    <li><strong>Contact Us:</strong> Email <strong>tofa.du@gmail.com</strong> for assistance with refund requests or purchase issues</li>
+  </ul>
+  <p><strong>Note:</strong> Refund eligibility and processing are determined by Google Play's policies, not by us.</p>
+
+  <h3>Legacy Product Support</h3>
+  <p>If you previously purchased the older product <code>com.tofabd.internetspeedmeter</code> (now discontinued), your ad-free status is still honored and will continue to work. You do not need to purchase again.</p>
+
+  <h3>Privacy After Purchase</h3>
+  <p>Once you purchase "Remove Ads":</p>
+  <ul>
+    <li>All advertisements stop immediately</li>
+    <li>Google AdMob SDK stops loading ads</li>
+    <li>No advertising data (Advertising ID, ad interactions) is collected</li>
+    <li>Firebase Analytics continues to function for app improvement (anonymized data only)</li>
+  </ul>
+
+  <p>For more information about how Google processes in-app purchase data, see <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">Google Payments Privacy Notice</a>.</p>
+
+  <h2>10. Foreground Service & Notification</h2>
   <p>The app runs a foreground service to monitor network speed continuously and keep the notification active. This service does not transmit data externally; it only reads system network statistics (TrafficStats API) locally.</p>
 
-  <h2>8. Permissions Used</h2>
+  <h2>11. Permissions Used</h2>
   <ul>
-    <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>: Required to monitor network connection status.</li>
+    <li><code>INTERNET</code> / <code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>: Required to monitor network connection status AND to load AdMob ads and send anonymized Firebase data.</li>
     <li><code>POST_NOTIFICATIONS</code>: To show optional network speed notifications (Android 13+ runtime permission).</li>
     <li><code>RECEIVE_BOOT_COMPLETED</code>: To restart monitoring and restore notification after device reboot.</li>
     <li><code>PACKAGE_USAGE_STATS</code> (Usage Access): Special permission to read system-level network statistics via NetworkStatsManager API. Used to accurately track WiFi and mobile data usage. Requires manual user approval in Android Settings. All data is processed locally and never transmitted externally.</li>
     <li><code>FOREGROUND_SERVICE</code> / <code>FOREGROUND_SERVICE_DATA_SYNC</code>: To keep the monitoring service active with a persistent notification.</li>
+    <li><code>com.google.android.gms.permission.AD_ID</code>: Enables access to Advertising ID for Google AdMob advertising. Not used if you purchase "Remove Ads".</li>
   </ul>
 
-  <h2>9. Security</h2>
+  <h2>12. Security</h2>
   <ul>
     <li>All data remains within Android's standard app sandbox.</li>
-    <li>No custom remote storage or transmission to any third-party servers.</li>
+    <li>No custom remote storage or transmission to third-party servers beyond Google ad requests and Firebase analytics.</li>
     <li>We do not implement additional encryption layers for local network data because it is non-personal and confined on-device.</li>
   </ul>
 
-  <h2>10. User Controls</h2>
+  <h2>13. User Controls & Your Rights</h2>
+  <p>You have full control over your data and privacy:</p>
+
+  <h3>In-App Controls</h3>
   <ul>
-    <li>Disable or change notification permissions in Android system settings.</li>
-    <li>Use the in-app "Reset Data" option to clear all usage history and statistics.</li>
-    <li>Use the in-app "Reset Settings" option to restore default preferences.</li>
-    <li>Uninstall the app to remove all remaining local data.</li>
+    <li><strong>Reset Data:</strong> Use the in-app "Reset Data" option in Settings to clear all usage history and statistics</li>
+    <li><strong>Reset Settings:</strong> Use the in-app "Reset Settings" option to restore default preferences</li>
+    <li><strong>Remove Ads:</strong> Purchase "Remove Ads" in the app to permanently stop seeing all advertisements</li>
   </ul>
 
-  <h2>11. Children's Privacy</h2>
+  <h3>Android System Controls</h3>
+  <ul>
+    <li><strong>Notification Permissions:</strong> Disable or change notification permissions in Android system settings → Apps → Internet Speed Meter → Notifications</li>
+    <li><strong>Usage Access Permission:</strong> Revoke Usage Access permission in Android system settings (note: this may affect data accuracy)</li>
+    <li><strong>Advertising ID:</strong> Reset your Advertising ID or opt out of personalized ads in Android Settings → Google → Ads</li>
+  </ul>
+
+  <h3>Ad Personalization Controls</h3>
+  <ul>
+    <li><strong>Google Ad Settings:</strong> Manage ad personalization preferences at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a></li>
+    <li><strong>GDPR Consent (EEA/UK users):</strong> Your consent choices for personalized ads are stored locally and can be reset by clearing app data</li>
+    <li><strong>Limit Ad Tracking:</strong> Disable personalized ads in Android Settings → Google → Ads → "Opt out of Ads Personalization"</li>
+  </ul>
+
+  <h3>Data Rights (GDPR/CCPA)</h3>
+  <ul>
+    <li><strong>Right to Access:</strong> Request information about what data we process by emailing <strong>tofa.du@gmail.com</strong></li>
+    <li><strong>Right to Deletion:</strong> Request deletion of analytics data associated with your device by emailing us. Note: Most data is processed locally and can be deleted by clearing app data or uninstalling</li>
+    <li><strong>Right to Object:</strong> Object to data processing by opting out of analytics, resetting your Advertising ID, or purchasing "Remove Ads"</li>
+    <li><strong>Right to Portability:</strong> Network usage data is stored locally on your device in standard formats</li>
+  </ul>
+
+  <h3>Complete Data Removal</h3>
+  <ul>
+    <li><strong>Uninstall the App:</strong> Removes all locally stored data (usage history, preferences, settings)</li>
+    <li><strong>Clear App Data:</strong> Android Settings → Apps → Internet Speed Meter → Storage → Clear Data</li>
+    <li><strong>Purchase History:</strong> Managed by Google Play (contact Google Play support for deletion requests)</li>
+  </ul>
+
+  <p><strong>Contact us:</strong> For any privacy-related questions, data requests, or concerns, email <strong>tofa.du@gmail.com</strong></p>
+
+  <h2>14. Children's Privacy</h2>
   <p>The app is not directed to children under 13. We do not knowingly collect personal data from children. If you believe a child has provided personal information, contact us to request deletion (though the app does not require such data).</p>
 
-  <h2>12. International & Legal Disclosures</h2>
+  <h2>15. International & Legal Disclosures</h2>
   <ul>
-    <li>No "sale" or "sharing" of personal information as defined in US state privacy laws.</li>
-    <li>No cross-border transfers, since no personal data is stored remotely.</li>
+    <li>No "sale" or "sharing" of personal information as defined in US state privacy laws (CCPA/CPRA).</li>
+    <li>No cross-border transfers of personal data stored by us, though Firebase and AdMob data may be processed by Google in compliance with applicable data protection laws.</li>
+    <li>For EEA users: Your data processing rights are outlined in Section 13 above.</li>
+    <li>For California users: You have the right to opt-out of the sale of personal information (not applicable as we don't sell data) and the right to request deletion of your information.</li>
   </ul>
 
-  <h2>13. Third Parties</h2>
+  <h2>16. Third-Party Services</h2>
+  <p>The app integrates the following third-party services, each governed by their own privacy policies:</p>
+
   <ul>
-    <li>No third-party SDKs (advertising, analytics, crash reporting, social, or tracking) are integrated.</li>
-    <li>The app operates completely independently with no external dependencies.</li>
+    <li><strong>Google AdMob</strong> – Advertising delivery and measurement
+      <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+      <br>Purpose: Display banner, interstitial, and app open advertisements</li>
+    
+    <li><strong>Google User Messaging Platform (UMP)</strong> – GDPR/TCF consent management
+      <br>Documentation: <a href="https://support.google.com/admob/answer/10107561" target="_blank" rel="noopener">https://support.google.com/admob/answer/10107561</a>
+      <br>Purpose: Collect user consent for personalized advertising in EEA/UK/Switzerland</li>
+    
+    <li><strong>Firebase Analytics</strong> – Anonymous app usage analytics
+      <br>Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a>
+      <br>Purpose: Understand app usage patterns and improve user experience</li>
+    
+    <li><strong>Google Play Billing</strong> – In-app purchase processing
+      <br>Privacy Notice: <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">Google Payments Privacy Notice</a>
+      <br>Purpose: Process "Remove Ads" purchase securely</li>
   </ul>
 
-  <h2>14. Changes to This Policy</h2>
+  <p>No other third-party SDKs (social networks, additional ad networks, or tracking services beyond Google) are integrated into this app.</p>
+
+  <h3>Third-Party Ad Partners</h3>
+  <p>Google AdMob may serve ads from various advertising partners. For a complete list of AdMob ad partners and their privacy policies, see:</p>
+  <ul>
+    <li><a href="https://support.google.com/admob/answer/9012903" target="_blank" rel="noopener">Google AdMob Partners List</a></li>
+    <li><a href="https://www.google.com/policies/technologies/partner-sites/" target="_blank" rel="noopener">How Google uses data when you use partner sites or apps</a></li>
+  </ul>
+
+  <h2>17. Changes to This Policy</h2>
   <p>We may update this policy to reflect feature changes or legal requirements. The "Last Updated" date will change upon revision. Material changes affecting user rights will be highlighted in release notes where practical.</p>
 
-  <h2>15. Contact</h2>
+  <h2>18. Contact</h2>
   <p>Questions or requests: <strong>tofa.du@gmail.com</strong></p>
 
-  <p>This Privacy Policy is hosted on GitHub Pages. For their data collection details, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a> and <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection" target="_blank" rel="noopener">GitHub Pages Data Collection</a>.</p>
+  <p>This Privacy Policy is hosted on GitHub Pages at <a href="https://tofabd.github.io/privacy-policy-internet-speed-meter/" target="_blank" rel="noopener">https://tofabd.github.io/privacy-policy-internet-speed-meter/</a>. For GitHub Pages data collection details, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a> and <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#data-collection" target="_blank" rel="noopener">GitHub Pages Data Collection</a>.</p>
 
   <hr />
   <footer>
