@@ -20,7 +20,7 @@
 </head>
 <body>
   <h1>Privacy Policy – Internet Speed Meter</h1>
-  <p class="meta">Effective Date: April 22, 2026 &nbsp;|&nbsp; Last Updated: April 22, 2026 &nbsp;|&nbsp; App Version: 5.0</p>
+  <p class="meta">Effective Date: April 22, 2026 &nbsp;|&nbsp; Last Updated: April 25, 2026 &nbsp;|&nbsp; App Version: 5.3</p>
 
   <h2>1. Introduction</h2>
   <p>Internet Speed Meter ("we", "our", or "the app") respects your privacy. This policy explains what information the Android app accesses, how it is used, and the limited circumstances under which information may be shared. The app is designed to function primarily on your device without transmitting your network usage statistics or history to our own servers.</p>
@@ -41,7 +41,8 @@
   <ul>
     <li>Network data usage (mobile and Wi-Fi) via Android's <code>TrafficStats</code> API and <code>NetworkStatsManager</code> API — total bytes sent and received. <code>NetworkStatsManager</code> requires the Usage Access special permission to provide accurate system-level statistics.</li>
     <li>Real-time download and upload speeds calculated from network usage deltas (1-second sampling).</li>
-    <li>Current network transport (Wi-Fi, Mobile, or Ethernet) and — while on Wi-Fi — the connected network's signal strength percentage, for display in the notification.</li>
+    <li>Current network transport (Wi-Fi, Mobile, or Ethernet) and — while on Wi-Fi — the connected network's signal strength percentage, link speed, frequency / band / channel, local IPv4 address, and gateway, for display in the notification and on the Wi-Fi tab.</li>
+    <li>While on Wi-Fi, and only if you grant the Location permission, the connected network's name (SSID) and access-point MAC address (BSSID), shown on the Wi-Fi tab and in the live-speed notification's collapsed line. The app does <em>not</em> scan for other networks and does <em>not</em> retrieve location coordinates.</li>
     <li>Daily, monthly, and custom-range data usage statistics, queried on-demand from <code>NetworkStatsManager</code>.</li>
     <li>User preferences (chart smoothing, default test engine, default unit, status-bar icon mode, lock-screen visibility, ad-free purchase cache).</li>
   </ul>
@@ -49,10 +50,11 @@
 
   <h2>4. What We Do <em>Not</em> Collect</h2>
   <ul>
-    <li>No name, email, address, phone, contacts, calendar, photos, media, files, messages, or precise location.</li>
+    <li>No name, email, address, phone, contacts, calendar, photos, media, files, or messages.</li>
     <li>No per-app data usage or app-specific network activity.</li>
     <li>No browsing history, URLs visited, or network traffic content.</li>
-    <li>No Wi-Fi network name (SSID), BSSID, or list of nearby networks — the app does not request the Location or Nearby Wi-Fi Devices permissions required to read those.</li>
+    <li>No location coordinates (latitude / longitude). Although Android requires the Location permission before any app can read SSID and BSSID of the currently connected Wi-Fi, the app uses that permission strictly for that purpose. It does not query GPS, fused location, network-based location, or any other location provider.</li>
+    <li>No list of nearby Wi-Fi networks. The app does not perform Wi-Fi scans and does not request the <code>NEARBY_WIFI_DEVICES</code> permission.</li>
     <li>No mobile carrier, SIM, IMEI, phone number, or any other telephony identifier — the app does not request <code>READ_PHONE_STATE</code>.</li>
     <li>No biometric, health, or other sensitive personal data.</li>
   </ul>
@@ -95,6 +97,8 @@
   <p>The app integrates Google Mobile Ads (AdMob) to display advertising in four formats:</p>
   <ul>
     <li><strong>Native ad</strong> on the Home screen (beneath the live speed chart).</li>
+    <li><strong>Native ad (large)</strong> on the Wi-Fi tab (beneath the signal gauge).</li>
+    <li><strong>Native ad</strong> on the Speed Test screen (beneath the result cards).</li>
     <li><strong>Adaptive banner</strong> on the Data Usage screen.</li>
     <li><strong>Interstitial</strong> shown after a speed test completes.</li>
     <li><strong>App Open</strong> ad shown on foreground transitions (subject to frequency capping described below).</li>
@@ -175,7 +179,8 @@
   <ul>
     <li><code>INTERNET</code> — required to load AdMob ads and send anonymized Firebase analytics.</li>
     <li><code>ACCESS_NETWORK_STATE</code> — detect Wi-Fi / Mobile / Ethernet connectivity state.</li>
-    <li><code>ACCESS_WIFI_STATE</code> — read Wi-Fi signal strength (RSSI) for display in the notification. Install-granted; no runtime prompt. SSID and BSSID are not read.</li>
+    <li><code>ACCESS_WIFI_STATE</code> — read Wi-Fi link metadata (signal strength, link speed, frequency) for display in the notification and on the Wi-Fi tab. Install-granted; no runtime prompt.</li>
+    <li><code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code> — required by Android 6+ before any app can read the Wi-Fi SSID and BSSID of the network you are currently connected to. The Wi-Fi tab requests this permission only when you tap "Grant Permission" on the in-screen banner; it is never auto-prompted on app launch. The app does <em>not</em> read location coordinates, does <em>not</em> scan for other networks, and the permission has no effect outside the Wi-Fi tab and notification line. You can revoke it at any time in Android Settings → Apps → Internet Speed Meter → Permissions; signal strength, link speed, band, IP, and gateway continue to work without it.</li>
     <li><code>POST_NOTIFICATIONS</code> — show the live-speed notification (Android 13+ runtime permission).</li>
     <li><code>RECEIVE_BOOT_COMPLETED</code> — restart the monitoring service after device reboot.</li>
     <li><code>PACKAGE_USAGE_STATS</code> (Usage Access) — special permission to read system-level network statistics via <code>NetworkStatsManager</code>. Requires manual user approval in Android Settings. All data is processed locally.</li>
@@ -285,7 +290,7 @@
 
   <hr />
   <footer>
-    <p>Internet Speed Meter – Privacy Policy v5.0. This document is provided for transparency and does not create contractual obligations beyond applicable law.</p>
+    <p>Internet Speed Meter – Privacy Policy v5.3. This document is provided for transparency and does not create contractual obligations beyond applicable law.</p>
   </footer>
 </body>
 </html>
